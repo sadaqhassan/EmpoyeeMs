@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Login = () => {
+const Login = ({role,title}) => {
   return (
     <div>
-        <div className='flex'>
+        <div className='flex flex-col md:flex-row'>
         {/* side */}
-        <div className='customBack h-screen flex flex-col justify-center items-center text-center w-1/2'>
+        <div className='customBack h-screen flex flex-col justify-center items-center text-center w-full md:w-1/2'>
             <div className='flex flex-col space-y-3 text-white'>
                 <h1 className='text-2xl md:text-4xl font-medium'>
                     Employee Management System
@@ -18,10 +18,10 @@ const Login = () => {
             </div>
         </div>
         {/* login */}
-        <div className='h-screen flex flex-col justify-center items-center text-center w-1/2'>
+        <div className='h-screen flex flex-col justify-center items-center text-center w-full md:w-1/2'>
             <div className='flex flex-col space-y-2'>
-                <h1 className='text-2xl md:text-3xl font-medium text-start'>Welcome Employee</h1>
-                <p className='mt-4 text-start text-md text-gray-700 mb-3'>Select your portal to securely access the system</p>
+                <h1 className='text-2xl md:text-3xl font-medium text-start'>{role === "admin" ? "Welcome Admin" : "Welcome Employee" } </h1>
+                <p className='mt-4 text-start text-md text-gray-700 mb-3'>{title}</p>
                 <input type="email" name='email' placeholder='Email'   className='my-5'/>
                 <input type="password"  name='password' placeholder='Password'/>
                 <input type="button" value="Login" />
