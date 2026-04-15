@@ -10,6 +10,7 @@ import Leave from './Pages/Leave'
 import Payslips from './Pages/Payslips'
 import PrintPayslips from './Pages/PrintPayslips'
 import Settings from './Pages/Settings'
+import LoginLanding from './Pages/LoginLanding'
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
 
     <Toaster/>
       <Routes>
+        <Route path='/login-landing' element={<LoginLanding/>}/>
         <Route path='/login' element={<Login/>}/>
 
         <Route path='/' element={<Layout/>}>
