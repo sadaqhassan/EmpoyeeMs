@@ -21,13 +21,13 @@ const App = () => {
         <Route path='/login-landing' element={<LoginLanding/>}/>
         <Route path='/login' element={<Login/>}/>
 
-        <Route path='/' element={<Layout/>}>
-        <Route path='dashboard' element={<Dashboard/>}/>
-        <Route path='attendence' element={<Attendence/>}/>
-        <Route path='employee' element={<Employee/>}/>
-        <Route path='leave' element={<Leave/>}/>
-        <Route path='payslips' element={<Payslips/>}/>
-        <Route path='settings' element={<Settings/>}/>
+        <Route element={<Layout/>}>
+        <Route path='/dashboard' element={<Dashboard/>}/>
+        <Route path='/attendence' element={<Attendence/>}/>
+        <Route path='/employee' element={<Employee/>}/>
+        <Route path='/leave' element={<Leave/>}/>
+        <Route path='/payslips' element={<Payslips/>}/>
+        <Route path='/settings' element={<Settings/>}/>
         </Route>
 
         <Route path='print/payslips/:id' element={<PrintPayslips/>}/>
