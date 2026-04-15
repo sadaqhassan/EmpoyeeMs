@@ -9,7 +9,7 @@ const Login = ({role,title}) => {
             [e.target.name]:e.target.value
         }))
     }
-  return (
+return (
     <div>
         <div className='flex flex-col md:flex-row'>
         {/* side */}
