@@ -24,7 +24,7 @@ const LoginLanding = () => {
                 <h1 className='text-2xl md:text-3xl font-medium text-start'>Welcome Back</h1>
                 <p className='mt-4 text-start text-md text-gray-700 mb-3'>Select your portal to securely access the system</p>
                 <input  type="button" onClick={()=>navigate("/login/admin")}   value={"Admin portal"} className='my-5'/>
-                <input  type="button"  onClick={()=>navigate("/login/employee")} value={"Employee port al"} />
+                <input  type="button"  onClick={()=>navigate("/login/employee")} value={"Employee portal"} />
                 <p className='mt-4 text-start text-xs text-gray-700'> &#169; { new Date().getFullYear() } Developed by sadak_Dev</p>
             </div>
         </div>
