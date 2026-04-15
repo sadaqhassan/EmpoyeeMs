@@ -2,7 +2,8 @@ import React from 'react'
 
 const Login = () => {
   return (
-    <div className='flex'>
+    <div>
+        <div className='flex'>
         {/* side */}
         <div className='customBack h-screen flex flex-col justify-center items-center text-center w-1/2'>
             <div className='flex flex-col space-y-3 text-white'>
@@ -19,13 +20,15 @@ const Login = () => {
         {/* login */}
         <div className='h-screen flex flex-col justify-center items-center text-center w-1/2'>
             <div className='flex flex-col space-y-2'>
-                <h1 className='text-2xl md:text-3xl font-medium text-start'>Welcome Back</h1>
+                <h1 className='text-2xl md:text-3xl font-medium text-start'>Welcome Employee</h1>
                 <p className='mt-4 text-start text-md text-gray-700 mb-3'>Select your portal to securely access the system</p>
-                <input type="button"  value={"Admin portal"} className='my-5'/>
-                <input type="button" value={"Employee portal"} />
+                <input type="email" name='email' placeholder='Email'   className='my-5'/>
+                <input type="password"  name='password' placeholder='Password'/>
+                <input type="button" value="Login" />
                 <p className='mt-4 text-start text-xs text-gray-700'> &#169; { new Date().getFullYear() } Developed by sadak_Dev</p>
             </div>
         </div>
+    </div>
     </div>
   )
 }
