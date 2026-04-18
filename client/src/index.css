@@ -111,6 +111,7 @@
 /* Custom scrollbar */
 ::-webkit-scrollbar {
     width: 6px;
+    display: none;
 }
 ::-webkit-scrollbar-track {
     @apply bg-transparent;
@@ -129,5 +130,6 @@
 
 
 .customBack{
-    background-image: linear-gradient(to right top, #01142d, #032340, #063354, #074468, #06567c);
+    background-image: linear-gradient(to right top, #01142d, hsl(209, 91%, 13%), #063354, #074468, #06567c);
 }
+
