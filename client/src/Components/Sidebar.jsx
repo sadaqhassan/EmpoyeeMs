@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import { NavLink, useLocation } from 'react-router-dom'
-import { LayoutDashboard, LogOut, MenuIcon, User2Icon } from 'lucide-react'
+import { LayoutDashboard, LogOut, MegaphoneIcon, MenuIcon, ReceiptIcon, Settings, User2Icon, UserMinus } from 'lucide-react'
 
 const menuItems = [
   { name: "Dashboard", path: "/dashboard", icon: LayoutDashboard },
   { name: "Employee", path: "/employee", icon: User2Icon },
-  { name: "Leave", path: "/leave", icon: User2Icon },
-  { name: "Attendance", path: "/attendence", icon: User2Icon },
-  { name: "Pay Slips", path: "/pay-slips", icon: User2Icon },
-  { name: "Settings", path: "/settings", icon: User2Icon },
+  { name: "Leave", path: "/leave", icon: UserMinus },
+  { name: "Attendance", path: "/attendence", icon: MegaphoneIcon },
+  { name: "Pay Slips", path: "/pay-slips", icon: ReceiptIcon },
+  { name: "Settings", path: "/settings", icon: Settings },
 ]
 
 const Sidebar = () => {
