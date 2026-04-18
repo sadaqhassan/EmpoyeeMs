@@ -18,7 +18,7 @@ const content = [
         <p className='text-gray-600 text-sm'>Here is Your Over-view Dashboard</p>
       </div>
 
-      <div className='grid grid-cols-2 overflow-x-scroll  xs:sm:flex wrap sm:flex-wrap  md:grid-cols-3 md:gap-6 gap-8 mt-5 '>
+      <div className='grid grid-cols-2 overflow-x-scroll  xs:sm:flex-wrap sm:flex-wrap  md:grid-cols-3 md:gap-6 gap-8 mt-5 '>
         {
           content.map((item,index)=>(
           <div className={`bg-white shadow-xl md:w-66 border-l-2 ${item.name === "Pending leaves" &&  "border-r-[#c64c00]" , item.name === "Todays_Attendence" && "border-r-[#009f20]" , item.name === "Total_Employers" && "border-[#0b466d]" , item.name === "Departments" && "border-r-green-900"} px-2 py-2 rounded`} key={index}>
