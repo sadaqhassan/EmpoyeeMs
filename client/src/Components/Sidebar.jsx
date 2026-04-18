@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import { NavLink, useLocation } from 'react-router-dom'
-import { LayoutDashboard, LogOut, MegaphoneIcon, MenuIcon, ReceiptIcon, Settings, User2Icon, UserMinus } from 'lucide-react'
+import { LayoutDashboard, LogOut,CalendarCheck2, MenuIcon, ReceiptIcon, Settings, User2Icon, UserMinus } from 'lucide-react'
 
 const menuItems = [
   { name: "Dashboard", path: "/dashboard", icon: LayoutDashboard },
   { name: "Employee", path: "/employee", icon: User2Icon },
   { name: "Leave", path: "/leave", icon: UserMinus },
-  { name: "Attendance", path: "/attendence", icon: MegaphoneIcon },
+  { name: "Attendance", path: "/attendence", icon: CalendarCheck2 },
   { name: "Pay Slips", path: "/pay-slips", icon: ReceiptIcon },
   { name: "Settings", path: "/settings", icon: Settings },
 ]
@@ -28,7 +28,7 @@ const Sidebar = () => {
     <div>
       {/* DESKTOP */}
       <div
-        className={`hidden md:flex flex-col justify-between h-screen bg-gray-900 text-white p-3 transition-all duration-300 ${
+        className={`hidden md:flex flex-col sticky top-0 justify-between h-screen bg-gray-900 text-white p-3 transition-all duration-300 ${
           menuOpen ? "w-64" : "w-20"
         }`}
       >
